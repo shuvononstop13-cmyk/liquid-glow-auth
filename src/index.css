@@ -207,6 +207,11 @@ All colors MUST be HSL for theme compatibility.
     animation: pulseNeon 2s ease-in-out infinite alternate;
   }
 
+  /* Welcome Animation */
+  .welcome-slide {
+    animation: slideInFromLeft 1s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  }
+
   /* Theme transition */
   .theme-transition {
     transition: background-color 0.5s cubic-bezier(0.4, 0, 0.2, 1),
@@ -245,6 +250,17 @@ All colors MUST be HSL for theme compatibility.
 }
 
 @keyframes pulseNeon {
-  0% { text-shadow: 0 0 5px hsl(var(--neon-glow)), 0 0 10px hsl(var(--neon-glow)); }
-  100% { text-shadow: 0 0 10px hsl(var(--neon-glow)), 0 0 20px hsl(var(--neon-glow)), 0 0 30px hsl(var(--neon-glow)); }
+  0% { 
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.6), 0 0 30px rgba(255, 255, 255, 0.4);
+    filter: brightness(1);
+  }
+  100% { 
+    text-shadow: 0 0 20px rgba(255, 255, 255, 1), 0 0 30px rgba(255, 255, 255, 0.8), 0 0 40px rgba(255, 255, 255, 0.6);
+    filter: brightness(1.2);
+  }
+}
+
+@keyframes slideInFromLeft {
+  0% { transform: translateX(-100%); opacity: 0; }
+  100% { transform: translateX(0); opacity: 1; }
 }
