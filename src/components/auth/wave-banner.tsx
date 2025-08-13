@@ -20,22 +20,22 @@ export function WaveBanner() {
 
       {/* Realistic Water Effects */}
       <div className="absolute inset-0">
-        <div className="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-t from-blue-500/20 to-transparent wave-animation" />
-        <div className="absolute bottom-10 left-0 w-full h-32 bg-gradient-to-t from-teal-400/15 to-transparent liquid-float-2" />
-        <div className="absolute bottom-20 left-0 w-full h-24 bg-gradient-to-t from-cyan-300/10 to-transparent liquid-float-3" />
+        <div className="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-t from-blue-500/20 to-transparent" />
+        <div className="absolute bottom-10 left-0 w-full h-32 bg-gradient-to-t from-teal-400/15 to-transparent" />
+        <div className="absolute bottom-20 left-0 w-full h-24 bg-gradient-to-t from-cyan-300/10 to-transparent" />
         
-        {/* Flowing Water Overlay */}
-        <div className="absolute inset-0 opacity-30">
-          <div className="absolute top-1/3 left-0 w-full h-1 bg-gradient-to-r from-transparent via-white/20 to-transparent liquid-float-1" />
-          <div className="absolute top-1/2 left-0 w-full h-1 bg-gradient-to-r from-transparent via-cyan-300/30 to-transparent liquid-float-2 delay-1000" />
-          <div className="absolute top-2/3 left-0 w-full h-1 bg-gradient-to-r from-transparent via-blue-300/25 to-transparent liquid-float-3 delay-2000" />
+        {/* Subtle Flowing Water Overlay */}
+        <div className="absolute inset-0 opacity-20">
+          <div className="absolute top-1/3 left-0 w-full h-px bg-gradient-to-r from-transparent via-white/30 to-transparent" />
+          <div className="absolute top-1/2 left-0 w-full h-px bg-gradient-to-r from-transparent via-cyan-300/40 to-transparent" />
+          <div className="absolute top-2/3 left-0 w-full h-px bg-gradient-to-r from-transparent via-blue-300/35 to-transparent" />
         </div>
       </div>
 
-      {/* Water Droplets */}
-      <div className="absolute top-1/4 left-1/4 w-4 h-4 rounded-full bg-white/40 liquid-float-1 opacity-60" />
-      <div className="absolute top-1/2 right-1/3 w-3 h-3 rounded-full bg-cyan-200/50 liquid-float-2" />
-      <div className="absolute bottom-1/3 left-1/2 w-5 h-5 rounded-full bg-blue-200/30 liquid-float-3" />
+      {/* Static Water Droplets */}
+      <div className="absolute top-1/4 left-1/4 w-3 h-3 rounded-full bg-white/30 opacity-60" />
+      <div className="absolute top-1/2 right-1/3 w-2 h-2 rounded-full bg-cyan-200/40" />
+      <div className="absolute bottom-1/3 left-1/2 w-4 h-4 rounded-full bg-blue-200/25" />
 
       {/* Content */}
       <div className="relative z-10 flex items-center justify-center h-full">

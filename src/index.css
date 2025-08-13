@@ -251,12 +251,12 @@ All colors MUST be HSL for theme compatibility.
 
 @keyframes pulseNeon {
   0% { 
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.6), 0 0 30px rgba(255, 255, 255, 0.4);
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.3), 0 0 10px rgba(255, 255, 255, 0.2);
     filter: brightness(1);
   }
   100% { 
-    text-shadow: 0 0 20px rgba(255, 255, 255, 1), 0 0 30px rgba(255, 255, 255, 0.8), 0 0 40px rgba(255, 255, 255, 0.6);
-    filter: brightness(1.2);
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.4), 0 0 15px rgba(255, 255, 255, 0.3);
+    filter: brightness(1.1);
   }
 }
 

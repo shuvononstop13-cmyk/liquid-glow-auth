@@ -108,7 +108,7 @@ export function AuthForm() {
                   id="login-email"
                   type="email"
                   placeholder="Enter your email"
-                  className="pl-10 glass-input liquid-float-1"
+                  className="pl-10 glass-input"
                   {...loginForm.register("email")}
                 />
               </div>
@@ -127,7 +127,7 @@ export function AuthForm() {
                   id="login-password"
                   type={showPassword ? "text" : "password"}
                   placeholder="Enter your password"
-                  className="pl-10 pr-10 glass-input liquid-float-2"
+                  className="pl-10 pr-10 glass-input"
                   {...loginForm.register("password")}
                 />
                 <Button
@@ -171,7 +171,7 @@ export function AuthForm() {
                   id="signup-name"
                   type="text"
                   placeholder="Enter your full name"
-                  className="pl-10 glass-input liquid-float-1"
+                  className="pl-10 glass-input"
                   {...signupForm.register("name")}
                 />
               </div>
@@ -190,7 +190,7 @@ export function AuthForm() {
                   id="signup-email"
                   type="email"
                   placeholder="Enter your email"
-                  className="pl-10 glass-input liquid-float-2"
+                  className="pl-10 glass-input"
                   {...signupForm.register("email")}
                 />
               </div>
@@ -209,7 +209,7 @@ export function AuthForm() {
                   id="signup-password"
                   type={showPassword ? "text" : "password"}
                   placeholder="Create a password"
-                  className="pl-10 pr-10 glass-input liquid-float-3"
+                  className="pl-10 pr-10 glass-input"
                   {...signupForm.register("password")}
                 />
                 <Button
@@ -242,7 +242,7 @@ export function AuthForm() {
                   id="signup-confirm-password"
                   type={showConfirmPassword ? "text" : "password"}
                   placeholder="Confirm your password"
-                  className="pl-10 pr-10 glass-input liquid-float-1"
+                  className="pl-10 pr-10 glass-input"
                   {...signupForm.register("confirmPassword")}
                 />
                 <Button

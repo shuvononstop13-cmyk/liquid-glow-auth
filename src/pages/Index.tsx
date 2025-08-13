@@ -14,7 +14,7 @@ const Index = () => {
       <div className="grid grid-cols-1 lg:grid-cols-2 min-h-screen">
         {/* Left Side - Authentication Form */}
         <div className="flex items-center justify-center p-8 lg:p-12">
-          <div className="w-full max-w-md glass-panel p-8 rounded-2xl liquid-float-1">
+          <div className="w-full max-w-md glass-panel p-8 rounded-2xl">
             <AuthForm />
           </div>
         </div>
